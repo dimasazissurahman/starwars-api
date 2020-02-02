@@ -1,0 +1,17 @@
+.container-footer {
+    background: black;
+	color: #fff;
+	height: 50px;
+	margin-top: 30px;
+    padding-top: 10px;    
+	padding-bottom: 10px;	
+	text-align: center;
+	position: fixed;	
+	bottom: 0;
+	width: 100%;	
+}
+img {
+	height: 50px;
+	width: 120px;
+	float: center;
+}

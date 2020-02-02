@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import HomePage from './container/HomePage';
+import PeoplesListPage from './container/peopleListPage';
+import PlanetsListPage from './container/planetsListPage';
+import FilmListPage from './container/filmsListPage';
+import InfiniteListPage from './container/AllPeoplesListPage';
+import { AppProvider } from './component/context';
+import OrderPage from './container/OrderPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppProvider>
+      <div className="App">
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/peoples/id=:number" component={PeoplesListPage} />
+            <Route path="/planets/id=:number" component={PlanetsListPage} />
+            <Route path="/films/id=:number" component={FilmListPage} />            
+          </Switch>
+        </BrowserRouter>
+      </div>
+    </AppProvider>
   );
 }
 

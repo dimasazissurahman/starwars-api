@@ -1,0 +1,49 @@
+.container-header {
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    width: 100%;        
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.container-header img {    
+    height: 50px;
+    width: 80px;
+    margin: 5px;    
+}
+.header-logo {
+    width: 40%;
+    margin-left: 20px;
+    text-align: left;
+}
+.header-title {  
+    width: 70%;      
+    color: white;
+    font-size: 20px;     
+    text-align: left;
+    margin: 15px;
+}
+.header-title a {
+    padding-left: 30%;
+}
+.header-button {
+    background: #575555 !important;
+    color: #fff !important;
+    margin: 10px;
+    display: block;
+    border: none !important;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;    
+    font-size: 14pt;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px){
+    .header-title{
+        display: none;
+    }    
+  }

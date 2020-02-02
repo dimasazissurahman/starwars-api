@@ -1,0 +1,42 @@
+.box-menu-peoples{
+    margin: auto;
+    height: auto;
+    width: 90%;
+    margin-bottom: 10px;
+    border: 1px solid #9b9b9b;
+    border-radius: 10px;
+    background-color: #fff;                
+    color: #000000;	
+    font-size: 12pt;	  
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);        
+}
+.sub-box-menu {
+    display: flex;
+}
+.box-list-desc {
+    width: 50%;
+    margin: 10px;
+    text-align: left;
+    margin-bottom: 5px;   
+}
+.box-list-data {
+    margin: 10px;
+    width: 50%;
+    text-align: left;
+}
+.box-list-data p {
+    margin-top: 1px;
+    border: 2px solid #9b9b9b;
+    border-radius: 5px;
+    width: 80%;
+    height: 25px;
+}
+.box-list-data p img {
+    height: 20px;
+    width: 20px;
+    margin-top: 2px;
+    float: right;
+}
+.space-between {
+    height: 20px;
+}
