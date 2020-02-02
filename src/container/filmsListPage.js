@@ -46,8 +46,7 @@ const FilmListPage = ({ match }) => {
                         <p className="box-list-desc">Release Date</p>
                         <span className="box-list-data">{data ? data.release_date : "Loading"}</span>
                     </div>                    
-                    <div className={"space-between"}></div>
-                    <button className="detail-info"></button>
+                    <div className={"space-between"}></div>                    
                 </div>
             </div>
             <div className={"space-between-footer"}></div>
