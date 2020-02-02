@@ -3,36 +3,10 @@ import './peoplesListPage.css';
 import { AppContext } from '../component/context';
 
 const OrderPlanetsPage = () => {
-    const [data, setData] = useState();
-    const [tempFilm, setTempFilm] = useState([]);
+
     const { tempOrder2, setTempOrder2 } = useContext(AppContext);
-    let arrayFilm = { value: tempFilm };
+        
     let arrayTemp = { value: tempOrder2 };
-
-
-    // useEffect(() => {
-    //     (async () => {            
-    //         console.log(tempOrder);                        
-    //         console.log(getData);
-    //         setData(getData);
-    //     })();
-    // }, []);
-
-    if (data) {
-        for (let i = 0; i < data.films.length; i++) {
-            arrayFilm.value.push(data.films[i]);
-        }
-    }
-    console.log(arrayFilm.value);
-    const handleRedirectTo = (char) => {
-        console.log(char);
-        let link = char.substring(27, 30);
-        return window.location.href = `/films/id=${link}`;
-    }    
-    
-    console.log(arrayTemp);
-    
-
 
     return (
         <div className="sub-container">
@@ -77,7 +51,7 @@ const OrderPlanetsPage = () => {
                         </div>
                         <div className={"space-between"}></div>
                         <div className={"sub-box-menu"}>
-                            <a className={"text-more"} href={`/peoples/id=${char ? char.url.substring(28, 30) : ""}`}>More</a>
+                            <a className={"text-more"} href={`/planets/id=${char ? char.url.substring(29, 31) : ""}`}>More</a>
                         </div>
                         <br />
                     </div>

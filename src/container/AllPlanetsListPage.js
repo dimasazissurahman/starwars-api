@@ -89,7 +89,7 @@ const InfinitePlanetsListPage = () => {
                         <div className={"space-between"}></div>
                         <div className={"sub-box-menu"}>
                             <div className={"sub-box-menu-flex"}>
-                                <a className={"text-more"} href={`/films/id=${char ? char.url.substring(27, 29) : ""}`}>More</a>
+                                <a className={"text-more"} href={`/planets/id=${char ? char.url.substring(29, 31) : ""}`}>More</a>
                                 <img src={logoLove} onClick={() => handleOrder(char)} />
                             </div>
                         </div>
